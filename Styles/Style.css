@@ -92,6 +92,7 @@ body{
 .sec-3{
     display: flex;
     justify-content: center;
+    gap: 50px;
     margin-top: 60px;
 }
 
@@ -175,6 +176,7 @@ tr{
 
 .h2-1{
     color: #cbd5e1;
+    padding: 0 35px;
 }
 
 .h2-2{
@@ -182,7 +184,9 @@ tr{
 }
 
 .contact-1{
-    padding-right: 600px;
+    border: 1px solid var(--accent);
+    border-radius: 15px;
+    background: var(--card);
 }
 
 
@@ -267,4 +271,143 @@ footer{
     justify-content: center;
     text-align: center;
     background-color: #cbd5e1;
+}
+
+
+/* Tablet */
+@media (max-width: 992px){
+
+    .nav-header{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .nav a{
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .sec-1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Welcome-massage{
+        margin-left: 0;
+        font-size: 36px;
+    }
+
+    .par{
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .image-main{
+        height: auto;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .sec-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-sec{
+        width: 90%;
+    }
+
+    .sec-3{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-1{
+        padding-right: 0;
+    }
+
+    .contact-2{
+        margin-top: 0;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .all-form{
+        width: 90%;
+    }
+
+    .form-group{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group input{
+        width: 100%;
+    }
+
+    .message{
+        width: 100%;
+    }
+
+    .table{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    th, td{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px){
+
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a{
+        font-size: 14px;
+        margin: 5px;
+        padding: 6px 10px;
+    }
+
+    .Welcome-massage{
+        font-size: 28px;
+    }
+
+    .par{
+        font-size: 16px;
+    }
+
+    .image-main{
+        width: 220px;
+    }
+
+    .image-sec{
+        width: 100%;
+    }
+
+    .form-group input{
+        font-size: 16px;
+    }
+
+    .btn{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 16px;
+        padding: 15px;
+    }
 }
